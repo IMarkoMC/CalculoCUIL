@@ -29,45 +29,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="161dp"
         android:layout_marginLeft="161dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="156dp"
         android:layout_marginRight="156dp"
         android:text="Calcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Mas" />
-
-    <RadioButton
-        android:id="@+id/btn_Mas"
-        android:layout_width="109dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="151dp"
-        android:layout_marginLeft="151dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="151dp"
-        android:layout_marginRight="151dp"
-        android:layout_marginBottom="14dp"
-        android:text="Maculino"
-        app:layout_constraintBottom_toTopOf="@+id/btn_Calc"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_Fem" />
-
-    <RadioButton
-        android:id="@+id/btn_Fem"
-        android:layout_width="111dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="151dp"
-        android:layout_marginLeft="151dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="149dp"
-        android:layout_marginRight="149dp"
-        android:layout_marginBottom="14dp"
-        android:text="Femenino"
-        app:layout_constraintBottom_toTopOf="@+id/btn_Mas"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_TuCuilEs" />
+        app:layout_constraintTop_toBottomOf="@+id/D_Sexo" />
 
     <EditText
         android:id="@+id/txt_dni"
@@ -96,11 +64,14 @@
         android:layout_marginTop="1dp"
         android:layout_marginEnd="100dp"
         android:layout_marginRight="100dp"
-        android:layout_marginBottom="78dp"
+        android:clickable="false"
+        android:editable="false"
         android:ems="10"
+        android:fadingEdge="horizontal|vertical"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:inputType="number"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/btn_Fem"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_Cuil2" />
@@ -121,5 +92,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/D_Sexo"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:entries="@array/Sexo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_TuCuilEs" />
 </android.support.constraint.ConstraintLayout>
 
