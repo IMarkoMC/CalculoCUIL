@@ -3,5 +3,7 @@
     <string-array name="Sexo">
         <item> Masculino </item>
         <item> Femenino </item>
+        <item> Masculino 2</item>
+        <item> Femenino 2</item>
     </string-array>
 </resources>
